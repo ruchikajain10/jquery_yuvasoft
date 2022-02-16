@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </script>
+    <style>
+        #panel,#flip{
+            padding:5px;
+            text-align:center;
+            background-color:#e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+        #panel{
+            padding:50px;
+            display:none;
+        }
+        h1{
+            text-align:center;
+            color:red;
+            text-transform:uppercase;
+            font-size:3em;
+
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Slidedown and SlideUp effect in jquery</h1>
+        <div id="flip">Click To slide down panel</div>
+        <div id="panel">Hello world</div>
+    </body>
+
+    <script>
+       // $(document).ready(function(){
+         //   $('#flip').click(function(){
+          //      $('#panel').slideDown('slow');
+           // });
+           // $('#flip').dblclick(function(){
+           //     $('#panel').slideUp('slow');
+
+           $(document).ready(function(){
+           $('#flip').click(function(){
+              $('#panel').slideToggle('slow');
+           
+            });
+        });
+
+    </script>
+</html>
